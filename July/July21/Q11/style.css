@@ -1,0 +1,13 @@
+header,
+footer {
+  height: 100px;
+  width: 200px;
+}
+
+section {
+  height: 200px;
+}
+
+article {
+  height: 50px;
+}
