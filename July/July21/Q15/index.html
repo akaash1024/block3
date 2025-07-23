@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <section class="section">
+        <div class="summary">
+          <h1>Welcome to My Porfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            quibusdam?
+          </p>
+        </div>
+
+        <div class="about" id="about">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit
+            possimus itaque ducimus ex praesentium?
+          </p>
+        </div>
+
+        <div class="project" id="project">
+          <h2>Project</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Project Alpha</td>
+                <td>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </td>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <td>Project Alpha</td>
+                <td>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </td>
+                <td>2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact" id="contact">
+          <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>@2025 All rights reserved by Akash</footer>
+  </body>
 </html>
