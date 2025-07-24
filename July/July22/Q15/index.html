@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Properties Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-color: #f9f9f9;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .container {
+        border: 1px solid #ccc;
+        padding: 15px;
+        background-color: #fff;
+      }
+
+      /* Block Element */
+      .block-element {
+        display: block;
+        background-color: #ffdddd;
+        border: 2px solid #cc0000;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Inline Element */
+      .inline-element {
+        display: inline;
+        background-color: #ddffdd;
+        color: #006600;
+        padding: 5px;
+        border: 1px solid #009900;
+      }
+
+      /* Inline-Block Element */
+      .inline-block-element {
+        display: inline-block;
+        background-color: #ddddff;
+        border: 2px dashed #000099;
+        width: 120px;
+        height: 80px;
+        padding: 10px;
+        margin-left: 10px;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      /* Hidden Element (display: none) */
+      .hidden-element {
+        display: none;
+        background-color: #f0e68c;
+        padding: 10px;
+        border: 2px dotted #a0522d;
+        margin-top: 10px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Display Properties Demo</h1>
+    <div class="container">
+      <p>
+        This is a demonstration of different CSS <code>display</code> values.
+      </p>
+
+      <div class="block-element">
+        I am a <strong>block</strong> element. I take full width.
+      </div>
+
+      <p>
+        This text contains an <span class="inline-element">inline</span> element
+        within a paragraph.
+      </p>
+
+      <div class="inline-block-element">Inline-Block Box</div>
+
+      <div id="hiddenBox" class="hidden-element">
+        I was hidden! Now I’m visible.
+      </div>
+
+      <button onclick="toggleHidden()">Toggle Hidden Element</button>
+    </div>
+
+    <script>
+      function toggleHidden() {
+        const box = document.getElementById("hiddenBox");
+        box.style.display = box.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>

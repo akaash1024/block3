@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Header & Fixed Footer Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    /* Main Content */
+    .content {
+      padding: 20px;
+      margin-bottom: 60px; /* to prevent footer overlap */
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    /* Fixed Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Sticky Header</h2>
+    <p>I stick to the top when you scroll!</p>
+  </header>
+
+  <div class="content">
+    <h3>Scrollable Content</h3>
+    <p>Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Paragraph 2: Aliquam tincidunt velit vel porta efficitur.</p>
+    <p>Paragraph 3: Sed imperdiet quam non justo tincidunt, at pharetra magna tempus.</p>
+    <p>Paragraph 4: Nullam blandit justo sed lacus dapibus, a interdum est bibendum.</p>
+    <p>Paragraph 5: Aenean tincidunt arcu vitae lectus luctus, ac viverra elit convallis.</p>
+    <p>Paragraph 6: Curabitur eu massa non augue convallis sagittis.</p>
+    <p>Paragraph 7: Maecenas nec nunc sed sapien accumsan cursus.</p>
+    <p>Paragraph 8: Ut id risus at velit ultricies posuere non in sem.</p>
+    <p>Paragraph 9: Donec ac magna nec urna rutrum sodales.</p>
+    <p>Paragraph 10: Pellentesque at nisl eget risus ultricies iaculis.</p>
+  </div>
+
+  <footer>
+    <p>Fixed Footer - Always visible at the bottom</p>
+  </footer>
+
+</body>
+</html>
