@@ -1,0 +1,51 @@
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Use flexbox for layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spacing between boxes */
+  margin-top: 20px;
+}
+
+/* Style each box */
+.box {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position text at the bottom center of the screen */
+.text {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0f0f0;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive behavior */
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+  }
+}
